@@ -2,25 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="robots" content="index, follow"> 
+  <meta name="description" content="Una calculadora es un dispositivo que se utiliza para realizar cálculos aritméticos. Aunque las calculadoras modernas incorporan a menudo un ordenador de propósito general, se diseñan para realizar ciertas operaciones más que para ser flexibles.">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/mobile.css">
+  <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 768px)">
+  <title>Calculadora</title>
 </head>
-<body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+<body id="body">
+  <header>
+    <h1>Calc</h1>
+    <nav class="navbar">
+      THEME
+      <label class="toggle-theme">
+        1 2 3
+        <div id="theme">
+          <div id="theme1"></div>
+          <div id="theme2"></div>
+          <div id="theme3"></div>
+        </div>
+      </label>
+    </nav>
+  </header>
+  <main>
+    <div id="screen">
+      <p id="results"></p>
+    </div>
+    <div class="container-buttons">
+      <div class="container-numbers">
+        <button data-number="7">7</button>
+        <button data-number="8">8</button>
+        <button data-number="9">9</button>
+        <button id="del" data-operation="del">DEL</button>
+        <button data-number="4">4</button>
+        <button data-number="5">5</button>
+        <button data-number="6">6</button>
+        <button data-math="+">+</button>
+        <button data-number="1">1</button>
+        <button data-number="2">2</button>
+        <button data-number="3">3</button>
+        <button data-math="-">-</button>
+        <button data-number=".">.</button>
+        <button data-number="0">0</button>
+        <button data-math="/">/</button>
+        <button data-math="*">x</button>
+      </div>
+      <div>
+        <button id="reset" data-operation="reset">RESET</button>
+        <button id="equal" data-operation="equal">=</button>
+      </div>
+    </div>
+  </main>
+  <script type="text/javascript" src="./js/index.js"></script>
 </body>
 </html>

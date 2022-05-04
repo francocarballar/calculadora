@@ -1,0 +1,16 @@
+body {
+    margin: 0 auto;
+    max-width: 600px;
+}
+.container-buttons
+button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+#reset {
+    width: calc(50% - 20px);
+}
+#equal {
+    width: calc(50% - 20px);
+}
