@@ -37,11 +37,11 @@ Aprendí a utilizar HTMLElement.dataset, a utilizar innerHTML.includes, a aplica
 
 ![Calculadora Mobile Theme 1](./design/mobile-design-theme-1.jpg)
 
-- Desktop Theme 2: 
+- Mobile Theme 2: 
 
 ![Calculadora Mobile Theme 2](./design/mobile-design-theme-2.jpg)
 
-- Desktop Theme 3: 
+- Mobile Theme 3: 
 
 ![Calculadora Mobile Theme 3](./design/mobile-design-theme-3.jpg)
 
