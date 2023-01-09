@@ -2,7 +2,7 @@
   "theme_color": "#3a4764",
   "background_color": "#3a4764",
   "display": "standalone",
-  "scope": "./",
+  "orientation": "portrait",
   "start_url": "./",
   "name": "Calculator",
   "short_name": "Calculator",
