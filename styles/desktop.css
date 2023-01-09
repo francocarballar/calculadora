@@ -1,15 +1,17 @@
 main {
-    height: 90%; 
+  height: 90%;
 }
-.container-buttons
-button {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+
+.container-buttons button {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 }
+
 #reset {
-    width: calc(50% - 20px);
+  width: calc(50% - 20px);
 }
+
 #equal {
-    width: calc(50% - 20px);
+  width: calc(50% - 20px);
 }

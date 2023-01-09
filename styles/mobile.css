@@ -1,360 +1,373 @@
 :root {
-    --font-size: 3.2rem;
-    --theme-1__main-background: hsl(222, 26%, 31%);
-    --theme-1__toggle-background: hsl(223, 31%, 20%);
-    --theme-1__screen-background: hsl(224, 36%, 15%);
-    --theme-1__key-background: hsl(225, 21%, 49%);
-    --theme-1__key-shadow: hsl(224, 28%, 35%);
-    --theme-1__number-background: hsl(30, 25%, 89%);
-    --theme-1__number-shadow: hsl(28, 16%, 65%);
-    --theme-1__toggle: hsl(6, 63%, 50%);
-    --theme-1__toggle-shadow: hsl(6, 70%, 34%);
-    --theme-1__text-color: hsl(221, 14%, 31%);
-    --theme-1__text-color-white: hsl(0, 0%, 100%);
+  --font-size: 3.2rem;
+  --dark__main-background: hsl(221, 27%, 31%);
+  --dark__toggle-background: hsl(223, 31%, 20%);
+  --dark__screen-background: hsl(224, 36%, 15%);
+  --dark__key-background: hsl(225, 21%, 49%);
+  --dark__key-shadow: hsl(224, 28%, 35%);
+  --dark__number-background: hsl(30, 25%, 89%);
+  --dark__number-shadow: hsl(28, 16%, 65%);
+  --dark__toggle: hsl(6, 63%, 50%);
+  --dark__toggle-shadow: hsl(6, 70%, 34%);
+  --dark__text-color: hsl(221, 14%, 31%);
+  --dark__text-color-white: hsl(0, 0%, 100%);
 
 
-    --theme-2__main-background: hsl(0, 0%, 90%);
-    --theme-2__toggle-background: hsl(0, 5%, 81%);
-    --theme-2__screen-background: hsl(0, 0%, 93%);
-    --theme-2__key-background: hsl(185, 42%, 37%);
-    --theme-2__key-shadow: hsl(185, 58%, 25%);
-    --theme-2__number-background: hsl(45, 7%, 89%);
-    --theme-2__number-shadow: hsl(35, 11%, 61%);
-    --theme-2__toggle: hsl(25, 98%, 40%);
-    --theme-2__toggle-shadow: hsl(25, 99%, 27%);
-    --theme-2__text-color: hsl(60, 10%, 19%);
-    --theme-2__text-color-white: hsl(0, 0%, 100%);
+  --light__main-background: hsl(0, 0%, 90%);
+  --light__toggle-background: hsl(0, 5%, 81%);
+  --light__screen-background: hsl(0, 0%, 93%);
+  --light__key-background: hsl(185, 42%, 37%);
+  --light__key-shadow: hsl(185, 58%, 25%);
+  --light__number-background: hsl(45, 7%, 89%);
+  --light__number-shadow: hsl(35, 11%, 61%);
+  --light__toggle: hsl(25, 98%, 40%);
+  --light__toggle-shadow: hsl(25, 99%, 27%);
+  --light__text-color: hsl(60, 10%, 19%);
+  --light__text-color-white: hsl(0, 0%, 100%);
 
 
-    --theme-3__main-background: hsl(268, 75%, 9%);
-    --theme-3__toggle-background: hsl(268, 71%, 12%);
-    --theme-3__screen-background: hsl(268, 71%, 12%);
-    --theme-3__key-background: hsl(281, 89%, 26%);
-    --theme-3__key-shadow: hsl(285, 91%, 52%);
-    --theme-3__number-background: hsl(268, 47%, 21%);
-    --theme-3__number-shadow: hsl(290, 70%, 36%);
-    --theme-3__toggle: hsl(176, 100%, 44%);
-    --theme-3__toggle-shadow: hsl(177, 92%, 70%);
-    --theme-3__text-color: hsl(52, 100%, 62%);
-    --theme-3__text-color-white: hsl(0, 0%, 100%);
+  --dracula__main-background: hsl(268, 74%, 9%);
+  --dracula__toggle-background: hsl(268, 71%, 12%);
+  --dracula__screen-background: hsl(268, 71%, 12%);
+  --dracula__key-background: hsl(281, 89%, 26%);
+  --dracula__key-shadow: hsl(285, 91%, 52%);
+  --dracula__number-background: hsl(268, 47%, 21%);
+  --dracula__number-shadow: hsl(290, 70%, 36%);
+  --dracula__toggle: hsl(176, 100%, 44%);
+  --dracula__toggle-shadow: hsl(177, 92%, 70%);
+  --dracula__text-color: hsl(52, 100%, 62%);
+  --dracula__text-color-white: hsl(0, 0%, 100%);
 }
+
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 html {
-    font-size: 62.5%;
-    font-family: 'League Spartan', sans-serif;
+  font-size: 62.5%;
+  font-family: 'League Spartan', sans-serif;
 }
+
 body {
-    padding: 25px;
-    margin: 0 auto;
-    max-width: 600px;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--theme-1__main-background);
-    overflow: hidden;
+  padding: 25px;
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--dark__main-background);
+  overflow: hidden;
 }
-body.theme2 {
-    background-color: var(--theme-2__main-background);
+
+body.light {
+  background-color: var(--light__main-background);
 }
-body.theme3 {
-    background-color: var(--theme-3__main-background);
+
+body.dracula {
+  background-color: var(--dracula__main-background);
 }
+
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 25px;
-    width: 100%;
-    height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 50px;
 }
+
 h1 {
-    color: var(--theme-1__text-color-white);
-    font-size: var(--font-size);
+  color: var(--dark__text-color-white);
+  font-size: var(--font-size);
 }
-body.theme2
-h1 {
-    color: var(--theme-2__text-color);
+
+body.light h1 {
+  color: var(--light__text-color);
 }
-body.theme3
-h1 {
-    color: var(--theme-3__text-color);
+
+body.dracula h1 {
+  color: var(--dracula__text-color);
 }
+
 .navbar {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 120px;
-    height: 100%;
-    color: var(--theme-1__text-color-white);
-    font-size: 1.4rem;
-    font-weight: 700;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 120px;
+  height: 100%;
+  color: var(--dark__text-color-white);
+  font-size: 1.4rem;
+  font-weight: 700;
 }
-body.theme2
-.navbar {
-    color: var(--theme-2__text-color);
+
+body.light .navbar {
+  color: var(--light__text-color);
 }
-body.theme3
-.navbar {
-    color: var(--theme-3__text-color);
+
+body.dracula .navbar {
+  color: var(--dracula__text-color);
 }
+
 .toggle-theme {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
-    margin-left: 10px;
-    width: 100%;
-    height: 100%;
-    vertical-align: text-top;
-    letter-spacing: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-left: 10px;
+  width: 100%;
+  height: 100%;
+  vertical-align: text-top;
+  letter-spacing: 4px;
 }
+
 #theme {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 3px;
-    padding: 5px;
-    width: 60px;
-    height: 20px;
-    background-color: var(--theme-1__toggle-background);
-    border-radius: 25px;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+  padding: 5px;
+  width: 60px;
+  height: 20px;
+  background-color: var(--dark__toggle-background);
+  border-radius: 25px;
+  cursor: pointer;
 }
-body.theme2
-#theme {
-    background-color: var(--theme-2__toggle-background);
+
+body.light #theme {
+  background-color: var(--light__toggle-background);
 }
-body.theme3
-#theme {
-    background-color: var(--theme-3__toggle-background);
+
+body.dracula #theme {
+  background-color: var(--dracula__toggle-background);
 }
-#theme 
-#theme1 {
-    width: 10px;
-    height: 100%;
-    background-color: var(--theme-1__toggle);
-    border-radius: 50%;
-    cursor: pointer;
+
+#theme #dark {
+  width: 10px;
+  height: 100%;
+  background-color: var(--dark__toggle);
+  border-radius: 50%;
+  cursor: pointer;
 }
-body.theme2
-#theme
-#theme1 {
-    opacity: 0;
+
+body.light #theme #dark {
+  opacity: 0;
 }
-body.theme3
-#theme
-#theme1 {
-    opacity: 0;
+
+body.dracula #theme #dark {
+  opacity: 0;
 }
-#theme2 {
-    width: 10px;
-    height: 100%;
-    background-color: var(--theme-2__toggle);
-    border-radius: 50%;
-    opacity: 0;
-    cursor: pointer;
+
+#light {
+  width: 10px;
+  height: 100%;
+  background-color: var(--light__toggle);
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
 }
-body.theme2
-#theme
-#theme2 {
-    opacity: 1;
+
+body.light #theme #light {
+  opacity: 1;
 }
-body.theme3
-#theme
-#theme2 {
-    opacity: 0;
+
+body.dracula #theme #light {
+  opacity: 0;
 }
-#theme3 {
-    width: 10px;
-    height: 100%;
-    background-color: var(--theme-3__toggle);
-    border-radius: 50%;
-    opacity: 0;
-    cursor: pointer;
+
+#dracula {
+  width: 10px;
+  height: 100%;
+  background-color: var(--dracula__toggle);
+  border-radius: 50%;
+  opacity: 0;
+  cursor: pointer;
 }
-body.theme3
-#theme
-#theme3 {
-    opacity: 1;
+
+body.dracula #theme #dracula {
+  opacity: 1;
 }
+
 main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 80%;
 }
+
 #screen {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 25px;
-    padding: 15px 25px;
-    width: 100%;
-    min-height: 60px;
-    background-color: var(--theme-1__screen-background);
-    border-radius: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 15px 25px;
+  width: 100%;
+  min-height: 60px;
+  background-color: var(--dark__screen-background);
+  border-radius: 10px;
 }
-body.theme2
-#screen {
-    background-color: var(--theme-2__screen-background);
+
+body.light #screen {
+  background-color: var(--light__screen-background);
 }
-body.theme3
-#screen {
-    background-color: var(--theme-3__screen-background);
+
+body.dracula #screen {
+  background-color: var(--dracula__screen-background);
 }
+
 #results {
-    width: 100%;
-    text-align: end;
-    color: var(--theme-1__text-color-white);
-    font-size: var(--font-size);
-    font-weight: 700;
-    letter-spacing: 1px;
-    background-color: var(--theme-1__screen-background);
-    border: none;
+  width: 100%;
+  text-align: end;
+  color: var(--dark__text-color-white);
+  font-size: var(--font-size);
+  font-weight: 700;
+  letter-spacing: 1px;
+  background-color: var(--dark__screen-background);
+  border: none;
 }
-body.theme2
-#results {
-    color: var(--theme-2__text-color);
-    background-color: var(--theme-2__screen-background);
+
+body.light #results {
+  color: var(--light__text-color);
+  background-color: var(--light__screen-background);
 }
-body.theme3
-#results {
-    color: var(--theme-3__text-color);
-    background-color: var(--theme-3__screen-background);
+
+body.dracula #results {
+  color: var(--dracula__text-color);
+  background-color: var(--dracula__screen-background);
 }
+
 #results:focus {
-    border: none;
-    outline: none;
+  border: none;
+  outline: none;
 }
+
 .container-buttons {
-    margin-bottom: 25px;
-    padding: 25px;
-    width: 100%;
-    height: 100%;
-    background-color: var(--theme-1__toggle-background);
-    border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark__toggle-background);
+  border-radius: 10px;
 }
-body.theme2
-.container-buttons {
-    background-color: var(--theme-2__toggle-background);
+
+body.light .container-buttons {
+  background-color: var(--light__toggle-background);
 }
-body.theme3
-.container-buttons {
-    background-color: var(--theme-3__toggle-background);
+
+body.dracula .container-buttons {
+  background-color: var(--dracula__toggle-background);
 }
-.container-buttons
-div {
-    margin-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    height: 20%
+
+.container-buttons div {
+  margin-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 20%
 }
-.container-buttons
-.container-numbers {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    margin-top: 0;
-    padding-bottom: 0;
-    width: 100%;
-    height: 80%;
+
+.container-buttons .container-numbers {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-top: 0;
+  padding-bottom: 0;
+  width: 100%;
+  height: 80%;
 }
-.container-buttons
-button {
-    margin-left: 7.5px;
-    margin-right: 7.5px;
-    margin-bottom: 15px;
-    max-width: 100px;
-    max-height: 80px;
-    color: var(--theme-1__text-color);
-    font-size: var(--font-size);
-    font-weight: 700;
-    background-color: var(--theme-1__number-background);
-    border: none;
-    border-radius: 7px;
-    box-shadow: 0px 5px 0px 0px var(--theme-1__number-shadow);
-    cursor: pointer;
+
+.container-buttons button {
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+  margin-bottom: 15px;
+  max-width: 100px;
+  max-height: 80px;
+  color: var(--dark__text-color);
+  font-size: var(--font-size);
+  font-weight: 700;
+  background-color: var(--dark__number-background);
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0px 5px 0px 0px var(--dark__number-shadow);
+  cursor: pointer;
 }
-body.theme2
-.container-buttons
-button {
-    color: var(--theme-2__text-color);
-    background-color: var(--theme-2__number-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-2__number-shadow);
+
+body.light .container-buttons button {
+  color: var(--light__text-color);
+  background-color: var(--light__number-background);
+  box-shadow: 0px 5px 0px 0px var(--light__number-shadow);
 }
-body.theme3
-.container-buttons
-button {
-    color: var(--theme-3__text-color);
-    background-color: var(--theme-3__number-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-3__number-shadow);
+
+body.dracula .container-buttons button {
+  color: var(--dracula__text-color);
+  background-color: var(--dracula__number-background);
+  box-shadow: 0px 5px 0px 0px var(--dracula__number-shadow);
 }
+
 #del {
-    color: var(--theme-1__text-color-white);
-    font-size: 1.6rem;
-    background-color: var(--theme-1__key-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-1__key-shadow);
+  color: var(--dark__text-color-white);
+  font-size: 1.6rem;
+  background-color: var(--dark__key-background);
+  box-shadow: 0px 5px 0px 0px var(--dark__key-shadow);
 }
-body.theme2
-#del {
-    color: var(--theme-2__text-color-white);
-    background-color: var(--theme-2__key-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-2__key-shadow);
+
+body.light #del {
+  color: var(--light__text-color-white);
+  background-color: var(--light__key-background);
+  box-shadow: 0px 5px 0px 0px var(--light__key-shadow);
 }
-body.theme3
-#del {
-    color: var(--theme-3__text-color-white);
-    background-color: var(--theme-3__key-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-3__key-shadow);
+
+body.dracula #del {
+  color: var(--dracula__text-color-white);
+  background-color: var(--dracula__key-background);
+  box-shadow: 0px 5px 0px 0px var(--dracula__key-shadow);
 }
+
 #reset {
-    width: calc(50% - 15px);
-    max-width: 100%;
-    height: 100%;
-    color: var(--theme-1__text-color-white);
-    font-size: 1.6rem;
-    background-color: var(--theme-1__key-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-1__key-shadow);
+  width: calc(50% - 15px);
+  max-width: 100%;
+  height: 100%;
+  color: var(--dark__text-color-white);
+  font-size: 1.6rem;
+  background-color: var(--dark__key-background);
+  box-shadow: 0px 5px 0px 0px var(--dark__key-shadow);
 }
-body.theme2
-#reset {
-    color: var(--theme-2__text-color-white);
-    background-color: var(--theme-2__key-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-2__key-shadow);
+
+body.light #reset {
+  color: var(--light__text-color-white);
+  background-color: var(--light__key-background);
+  box-shadow: 0px 5px 0px 0px var(--light__key-shadow);
 }
-body.theme3
-#reset {
-    color: var(--theme-3__text-color-white);
-    background-color: var(--theme-3__key-background);
-    box-shadow: 0px 5px 0px 0px var(--theme-3__key-shadow);
+
+body.dracula #reset {
+  color: var(--dracula__text-color-white);
+  background-color: var(--dracula__key-background);
+  box-shadow: 0px 5px 0px 0px var(--dracula__key-shadow);
 }
+
 #equal {
-    margin-right: 0;
-    width: calc(50% - 15px);
-    max-width: 100%;
-    height: 100%;
-    color: var(--theme-1__text-color-white);
-    font-size: 1.6rem;
-    background-color: var(--theme-1__toggle);
-    box-shadow: 0px 5px 0px 0px var(--theme-1__toggle-shadow);
+  margin-right: 0;
+  width: calc(50% - 15px);
+  max-width: 100%;
+  height: 100%;
+  color: var(--dark__text-color-white);
+  font-size: 1.6rem;
+  background-color: var(--dark__toggle);
+  box-shadow: 0px 5px 0px 0px var(--dark__toggle-shadow);
 }
-body.theme2
-#equal {
-    color: var(--theme-2__text-color-white);
-    background-color: var(--theme-2__toggle);
-    box-shadow: 0px 5px 0px 0px var(--theme-2__toggle-shadow);
+
+body.light #equal {
+  color: var(--light__text-color-white);
+  background-color: var(--light__toggle);
+  box-shadow: 0px 5px 0px 0px var(--light__toggle-shadow);
 }
-body.theme3
-#equal {
-    color: black;
-    background-color: var(--theme-3__toggle);
-    box-shadow: 0px 5px 0px 0px var(--theme-3__toggle-shadow);
+
+body.dracula #equal {
+  color: black;
+  background-color: var(--dracula__toggle);
+  box-shadow: 0px 5px 0px 0px var(--dracula__toggle-shadow);
 }
